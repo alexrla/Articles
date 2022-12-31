@@ -4,14 +4,76 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blog Analytics Dashboard</title>
+    <title>Articles</title>
     <!-- Bootstrap -->
     <link rel="stylesheet" href="./assets/styles/bootstrap.css">
     <!-- CSS -->
     <link rel="stylesheet" href="./assets/styles/style.css">
   </head>
   <body>
-    
+    <!-- Navbar -->
+    <div class="nav navbar navbar-expand-lg navbar-dark bg-dark p-3">
+      <div class="container">
+        <a href="./index.html" class="navbar-brand fs-3">Articles</a>
+        <button 
+          class="navbar-toggler" 
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarCollapse"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav">
+            <li class="nav-item px-2">
+              <a href="./index.html" class="nav-link active">Dashboard</a>
+            </li>
+            <li class="nav-item px-2">
+              <a href="./pages/my_articles.html" class="nav-link">Artigos</a>
+            </li>
+            <li class="nav-item px-2">
+              <a href="./pages/categories.html" class="nav-link">Categorias</a>
+            </li>
+            <li class="nav-item px-2">
+              <a href="./pages/users.html" class="nav-link">Usuários</a>
+            </li>
+          </ul>
+          
+          <ul class="navbar-nav mx-auto">
+            <li class="nav-item dropdown ms-2">
+              <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">
+                <i class="fa-solid fa-user me-1"></i> Bem-vindo Theo
+              </a>
+              <div class="dropdown-menu">
+                <a href="./pages/profile.html" class="dropdown-item">
+                  <i class="fa-solid fa-circle-user me-1"></i> Perfil
+                </a>
+                <a href="./pages/settings.html" class="dropdown-item mt-2">
+                  <i class="fa-solid fa-gear me-1"></i> Configurações
+                </a>
+              </div>
+            </li>
+            <li class="nav-item dropdown ms-2">
+              <a href="./pages/login.html" class="nav-link">
+                <i class="fa-solid fa-user-xmark me-1"></i> Sair
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-- Header -->
+    <header id="header-container" class="bg-primary text-white p-3">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <h1>
+              <i class="fa-solid fa-gear me-1"></i> DashBoard
+            </h1>
+          </div>
+        </div>
+      </div>
+    </header>
     <!-- FontAwesome -->
     <script src="https://kit.fontawesome.com/882bb34580.js" crossorigin="anonymous"></script>
     <!-- JavaScript -->
