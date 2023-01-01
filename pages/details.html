@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Articles - Posts</title>
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="../assets/styles/bootstrap.css">
+    <!-- CSS -->
+    <link rel="stylesheet" href="../assets/styles/style.css">
+  </head>
+  <body>
+    <!-- Navbar -->
+    <div class="nav navbar navbar-expand-lg navbar-dark bg-dark p-3">
+      <div class="container">
+        <a href="../index.html" class="navbar-brand fs-3">Articles</a>
+        <button 
+          class="navbar-toggler" 
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarCollapse"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav">
+            <li class="nav-item px-2">
+              <a href="../index.html" class="nav-link">Dashboard</a>
+            </li>
+            <li class="nav-item px-2">
+              <a href="./posts.html" class="nav-link">Posts</a>
+            </li>
+            <li class="nav-item px-2">
+              <a href="./categories.html" class="nav-link">Categorias</a>
+            </li>
+            <li class="nav-item px-2">
+              <a href="./users.html" class="nav-link">Usuários</a>
+            </li>
+          </ul>
+          
+          <ul class="navbar-nav mx-auto">
+            <li class="nav-item dropdown ms-2">
+              <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">
+                <i class="fa-solid fa-user me-1"></i> Bem-vindo Theo
+              </a>
+              <div class="dropdown-menu">
+                <a href="./pages/profile.html" class="dropdown-item">
+                  <i class="fa-solid fa-circle-user me-1"></i> Perfil
+                </a>
+                <a href="./pages/settings.html" class="dropdown-item mt-2">
+                  <i class="fa-solid fa-gear me-1"></i> Configurações
+                </a>
+              </div>
+            </li>
+            <li class="nav-item dropdown ms-2">
+              <a href="./pages/login.html" class="nav-link">
+                <i class="fa-solid fa-user-xmark me-1"></i> Sair
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-- Header -->
+    <header id="header-container" class="bg-primary text-white p-3">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <h1>
+              Post 1
+            </h1>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- Actions -->
+    <section id="actions" class="p-4 mb-4 bg-light">
+      <div class="container">
+        <div class="row g-2">
+          <div class="col-lg-3 col-md-4">
+            <div class="d-grid">
+              <a href="../index.html" class="btn btn-secondary">
+                <i class="fa-solid fa-arrow-left me-1"></i> Voltar ao dashboard
+              </a>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4">
+            <div class="d-grid">
+              <a href="../index.html" class="btn btn-success">
+                <i class="fa-solid fa-check me-1"></i> Salvar alterações
+              </a>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4">
+            <div class="d-grid">
+              <a href="../index.html" class="btn btn-danger">
+                <i class="fa-solid fa-trash me-1"></i> Deletar post
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Post Edit -->
+    <section id="post-edit">
+      <div class="container">
+        <div class="row">
+          <div class="col col-lg-8 mx-lg-auto">
+            <div class="card">
+              <div class="card-header">
+                <h4>Editar Post</h4>
+              </div>
+              <div class="card-body">
+                <form action="#">
+                  <div class="mb-3">
+                    <label for="title_1" class="form-label">Título:</label>
+                    <input type="text" id="title_1" class="form-control" value="Post 1">
+                  </div>
+                  <div class="mb-3">
+                    <label for="category" class="form-label">Categoria:</label>
+                    <select id="category" class="form-select">
+                      <option selected value="categoria 1">Categoria 1</option>
+                      <option value="categoria 2">Categoria 2</option>
+                      <option value="categoria 3">Categoria 3</option>
+                      <option value="categoria 4">Categoria 4</option>
+                    </select>
+                  </div>
+                  <div class="mb-3">
+                    <label for="uploadImage" class="form-label">Carregar imagem:</label>
+                    <input type="file" id="uploadImage" class="form-control">
+                    <small class="form-text ms-1">Tamanho Máximo: 3mb</small>
+                  </div>
+                  <div class="mb-3">
+                    <label for="editor" class="form-label">Postagem:</label>
+                    <textarea id="editor" class="form-control">
+                      Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                      Exercitationem, beatae ut, ipsum ullam ducimus harum explicabo 
+                      distinctio similique a praesentium eligendi autem sint. Eum 
+                      libero quidem explicabo esse eius, mollitia amet earum ullam 
+                      aliquam veritatis ab, sequi magni repellat! Delectus vitae 
+                      perspiciatis facilis unde cupiditate, adipisci repellendus 
+                      laborum fugiat amet ex. Nobis, libero esse totam quis nihil 
+                      perferendis alias expedita. Blanditiis, culpa? Maxime qui 
+                      incidunt natus enim ratione rerum, dicta veniam explicabo optio 
+                      labore, magnam voluptas deleniti repudiandae nemo exercitationem.
+                      
+                    </textarea>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Footer -->
+    <footer id="footer-container" class="bg-dark text-white mt-5 p-5">
+      <div class="container">
+        <p class="lead text-center">
+          Articles &copy; <span id="year"></span> - Todos os direitos reservados.
+        </p>
+      </div>
+    </footer>
+    <!-- FontAwesome -->
+    <script src="https://kit.fontawesome.com/882bb34580.js" crossorigin="anonymous"></script>
+    <!-- JavaScript -->
+    <script src="../assets/scripts/jquery-3.6.3.min.js"></script>
+    <script src="../assets/scripts/popper.js"></script>
+    <script src="../assets/scripts/bootstrap.js"></script>
+    <!-- CKEditor -->
+    <script src="https://cdn.ckeditor.com/ckeditor5/35.4.0/classic/ckeditor.js"></script>
+    <script>
+      // CKEditor
+      ClassicEditor
+                  .create( document.querySelector( '#editor' ) )
+                  .then( editor => {
+                          console.log( editor );
+                  } )
+                  .catch( error => {
+                          console.error( error );
+                  } );
+
+      // Pegando o ano atual
+      $('#year').text(new Date().getFullYear());
+    </script>
+  </body>
+</html>
