@@ -74,12 +74,142 @@
         </div>
       </div>
     </header>
+    <!-- Actions -->
+    <section id="actions" class="p-4 mb-4 bg-light">
+      <div class="container">
+        <div class="row g-2">
+          <div class="col-md-3">
+            <div class="d-grid">
+              <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#addPost">
+                <i class="fa-solid fa-plus me-1"></i> Criar Post
+              </a>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="d-grid">
+              <a href="#" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#addCategory">
+                <i class="fa-solid fa-plus me-1"></i> Criar Categoria
+              </a>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="d-grid">
+              <a href="#" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#addUser">
+                <i class="fa-solid fa-plus me-1"></i> Criar Usuário
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Modals -->
+    <div class="modal fade" id="addPost">
+      <div class="modal-dialog">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+            <div class="modal-header bg-primary text-white">
+              <h5 class="modal-title">Criar Post</h5>
+              <button class="btn-close bg-white" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+              <form action="#">
+                <div class="mb-3">
+                  <label for="title" class="form-label">Título:</label>
+                  <input type="text" id="title" class="form-control">
+                </div>
+                <div class="mb-3">
+                  <label for="category" class="form-label">Categoria:</label>
+                  <select id="category" class="form-select">
+                    <option selected value="categoria 1">Categoria 1</option>
+                    <option value="categoria 2">Categoria 2</option>
+                    <option value="categoria 3">Categoria 3</option>
+                    <option value="categoria 4">Categoria 4</option>
+                  </select>
+                </div>
+                <div class="mb-3">
+                  <label for="uploadImage" class="form-label">Carregar imagem:</label>
+                  <input type="file" id="uploadImage" class="form-control">
+                  <small class="form-text ms-1">Tamanho Máximo: 3mb</small>
+                </div>
+                <div class="mb-3">
+                  <label for="editor" class="form-label">Postagem:</label>
+                  <textarea id="editor" class="form-control"></textarea>
+                </div>
+              </form>
+            </div>
+            <div class="modal-footer">
+              <button class="btn btn-primary" data-bs-dismiss="modal">Criar Postagem</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="addCategory">
+      <div class="modal-dialog">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+            <div class="modal-header bg-success text-white">
+              <h5 class="modal-title">Criar Categoria</h5>
+              <button class="btn-close bg-white" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+              <form action="#">
+                <div class="mb-3">
+                  <label for="title" class="form-label">Título:</label>
+                  <input type="text" id="title" class="form-control">
+                </div>
+              </form>
+            </div>
+            <div class="modal-footer">
+              <button class="btn btn-success" data-bs-dismiss="modal">Criar Categoria</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="addUser">
+      <div class="modal-dialog">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+            <div class="modal-header bg-warning text-white">
+              <h5 class="modal-title">Criar Usuário</h5>
+              <button class="btn-close bg-white" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+              <form action="#">
+                <div class="mb-3">
+                  <label for="name" class="form-label">Nome:</label>
+                  <input type="text" id="name" class="form-control">
+                </div>
+                <div class="mb-3">
+                  <label for="email" class="form-label">E-mail:</label>
+                  <input type="email" id="email" class="form-control">
+                </div>
+                <div class="mb-3">
+                  <label for="password" class="form-label">Senha:</label>
+                  <input type="password" id="password" class="form-control">
+                </div>
+                <div class="mb-3">
+                  <label for="confirmPassword" class="form-label">Confirmar senha:</label>
+                  <input type="password" id="confirmPassword" class="form-control">
+                </div>
+              </form>
+            </div>
+            <div class="modal-footer">
+              <button class="btn btn-warning" data-bs-dismiss="modal">Criar Usuário</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
     <!-- FontAwesome -->
     <script src="https://kit.fontawesome.com/882bb34580.js" crossorigin="anonymous"></script>
     <!-- JavaScript -->
     <script src="./assets/scripts/jquery-3.6.3.min.js"></script>
     <script src="./assets/scripts/popper.js"></script>
     <script src="./assets/scripts/bootstrap.js"></script>
+    <!-- CKEditor -->
+    <script src="https://cdn.ckeditor.com/ckeditor5/35.4.0/classic/ckeditor.js"></script>
     <script src="./assets/scripts/script.js"></script>
   </body>
 </html>
