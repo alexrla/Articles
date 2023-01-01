@@ -7,3 +7,6 @@ ClassicEditor
             .catch( error => {
                     console.error( error );
             } );
+
+// Pegando o ano atual
+$('#year').text(new Date().getFullYear());
