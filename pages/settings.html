@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Articles - Post 1</title>
+    <title>Articles - Configurações</title>
     <!-- Bootstrap -->
     <link rel="stylesheet" href="../assets/styles/bootstrap.css">
     <!-- CSS -->
@@ -68,7 +68,7 @@
         <div class="row">
           <div class="col-md-6">
             <h1>
-              Post 1
+              <i class="fa-solid fa-gear me-1"></i> Configurações
             </h1>
           </div>
         </div>
@@ -92,61 +92,50 @@
               </a>
             </div>
           </div>
-          <div class="col-lg-3 col-md-4">
-            <div class="d-grid">
-              <a href="../index.html" class="btn btn-danger">
-                <i class="fa-solid fa-trash me-1"></i> Deletar post
-              </a>
-            </div>
-          </div>
         </div>
       </div>
     </section>
-    <!-- Post Edit -->
-    <section id="post-edit">
+    <!-- Settings Edit -->
+    <section id="settings-edit">
       <div class="container">
         <div class="row">
           <div class="col col-lg-8 mx-lg-auto">
-            <div class="card">
+            <div class="card mt-3">
               <div class="card-header">
-                <h4>Editar Post</h4>
+                <h4>Editar Configurações</h4>
               </div>
               <div class="card-body">
                 <form action="#">
-                  <div class="mb-3">
-                    <label for="title_1" class="form-label">Título:</label>
-                    <input type="text" id="title_1" class="form-control" value="Post 1">
-                  </div>
-                  <div class="mb-3">
-                    <label for="category" class="form-label">Categoria:</label>
-                    <select id="category" class="form-select">
-                      <option selected value="categoria 1">Categoria 1</option>
-                      <option value="categoria 2">Categoria 2</option>
-                      <option value="categoria 3">Categoria 3</option>
-                      <option value="categoria 4">Categoria 4</option>
-                    </select>
-                  </div>
-                  <div class="mb-3">
-                    <label for="uploadImage" class="form-label">Carregar imagem:</label>
-                    <input type="file" id="uploadImage" class="form-control">
-                    <small class="form-text ms-1">Tamanho Máximo: 3mb</small>
-                  </div>
-                  <div class="mb-3">
-                    <label for="editor" class="form-label">Postagem:</label>
-                    <textarea id="editor" class="form-control">
-                      Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
-                      Exercitationem, beatae ut, ipsum ullam ducimus harum explicabo 
-                      distinctio similique a praesentium eligendi autem sint. Eum 
-                      libero quidem explicabo esse eius, mollitia amet earum ullam 
-                      aliquam veritatis ab, sequi magni repellat! Delectus vitae 
-                      perspiciatis facilis unde cupiditate, adipisci repellendus 
-                      laborum fugiat amet ex. Nobis, libero esse totam quis nihil 
-                      perferendis alias expedita. Blanditiis, culpa? Maxime qui 
-                      incidunt natus enim ratione rerum, dicta veniam explicabo optio 
-                      labore, magnam voluptas deleniti repudiandae nemo exercitationem.
-                      
-                    </textarea>
-                  </div>
+                  <fieldset class="mb-4">
+                    <legend>Permitir o cadastro de usuários</legend>
+                    <div class="mb-2">
+                      <input type="radio" id="yes" name="registration" value="yes" class="form-check-input me-1" checked>
+                      <label for="yes" class="form-check-label">Sim</label>
+                    </div>
+                    <div>
+                      <input type="radio" id="no" name="registration" value="no" class="form-check-input me-1">
+                      <label for="no" class="form-check-label">Não</label>
+                    </div>
+                  </fieldset>
+                  <fieldset class="mb-4">
+                    <legend>Formato da página inicial</legend>
+                    <div class="mb-2">
+                      <input type="radio" id="blogpage" name="format" value="blogpage" class="form-check-input me-1" checked>
+                      <label for="blogpage" class="form-check-label">Blogpage</label>
+                    </div>
+                    <div>
+                      <input type="radio" id="homepage" name="formato" value="homepage" class="form-check-input me-1">
+                      <label for="homepage" class="form-check-label">Homepage</label>
+                    </div>
+                  </fieldset>
+                  <fieldset>
+                    <legend>Deletar Conta</legend>
+                    <p class="small">
+                      Após deletar sua conta, não será possível voltar atrás. <br /> 
+                      Por favor, tenha certeza do que está fazendo.
+                    </p>
+                    <input type="submit" class="btn btn-outline-danger" value="Apagar conta">
+                  </fieldset>
                 </form>
               </div>
             </div>
@@ -168,19 +157,7 @@
     <script src="../assets/scripts/jquery-3.6.3.min.js"></script>
     <script src="../assets/scripts/popper.js"></script>
     <script src="../assets/scripts/bootstrap.js"></script>
-    <!-- CKEditor -->
-    <script src="https://cdn.ckeditor.com/ckeditor5/35.4.0/classic/ckeditor.js"></script>
     <script>
-      // CKEditor
-      ClassicEditor
-                  .create( document.querySelector( '#editor' ) )
-                  .then( editor => {
-                          console.log( editor );
-                  } )
-                  .catch( error => {
-                          console.error( error );
-                  } );
-
       // Pegando o ano atual
       $('#year').text(new Date().getFullYear());
     </script>
