@@ -1,0 +1,11 @@
+/* Posts page */
+.padding th,
+.padding td {
+  padding: 1rem;
+}
+
+.s-li {
+  text-align: center;
+
+  width: 5rem;
+}

@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Articles - Posts</title>
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="../assets/styles/bootstrap.css">
+    <!-- CSS -->
+    <link rel="stylesheet" href="../assets/styles/style.css">
+  </head>
+  <body>
+    <!-- Navbar -->
+    <div class="nav navbar navbar-expand-lg navbar-dark bg-dark p-3">
+      <div class="container">
+        <a href="../index.html" class="navbar-brand fs-3">Articles</a>
+        <button 
+          class="navbar-toggler" 
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarCollapse"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav">
+            <li class="nav-item px-2">
+              <a href="../index.html" class="nav-link">Dashboard</a>
+            </li>
+            <li class="nav-item px-2">
+              <a href="./posts.html" class="nav-link active">Posts</a>
+            </li>
+            <li class="nav-item px-2">
+              <a href="./categories.html" class="nav-link">Categorias</a>
+            </li>
+            <li class="nav-item px-2">
+              <a href="./users.html" class="nav-link">Usuários</a>
+            </li>
+          </ul>
+          
+          <ul class="navbar-nav mx-auto">
+            <li class="nav-item dropdown ms-2">
+              <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">
+                <i class="fa-solid fa-user me-1"></i> Bem-vindo Theo
+              </a>
+              <div class="dropdown-menu">
+                <a href="./pages/profile.html" class="dropdown-item">
+                  <i class="fa-solid fa-circle-user me-1"></i> Perfil
+                </a>
+                <a href="./pages/settings.html" class="dropdown-item mt-2">
+                  <i class="fa-solid fa-gear me-1"></i> Configurações
+                </a>
+              </div>
+            </li>
+            <li class="nav-item dropdown ms-2">
+              <a href="./pages/login.html" class="nav-link">
+                <i class="fa-solid fa-user-xmark me-1"></i> Sair
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-- Header -->
+    <header id="header-container" class="bg-primary text-white p-3">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <h1>
+              <i class="fa-solid fa-pencil me-1"></i> Posts
+            </h1>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- Search -->
+    <section id="search" class="p-4 mb-4 bg-light">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 ms-lg-0 mx-auto">
+            <div class="input-group">
+              <input type="text" class="form-control" placeholder="Buscar post...">
+              <button class="btn btn-primary">
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Posts -->
+    <section id="posts">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <div class="card">
+              <div class="card-header p-3">
+                <h4>Últimas postagens</h4>
+              </div>
+              <table class="table table-striped mb-0">
+                <thead class="table-dark">
+                  <tr class="padding">
+                    <th>#</th>
+                    <th>Título</th>
+                    <th>Categoria</th>
+                    <th>Data</th>
+                    <th></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr class="padding">
+                    <td>1</td>
+                    <td>Post 1</td>
+                    <td>Categoria 1</td>
+                    <td>XX/XX/XXXX</td>
+                    <td>
+                      <a href="./details.html" class="btn btn-secondary">
+                        <i class="fa-solid fa-angles-right me-2"></i>
+                        Ver detalhes
+                      </a>
+                    </td>
+                  </tr>
+                  <tr class="padding">
+                    <td>2</td>
+                    <td>Post 2</td>
+                    <td>Categoria 2</td>
+                    <td>XX/XX/XXXX</td>
+                    <td>
+                      <a href="./details.html" class="btn btn-secondary">
+                        <i class="fa-solid fa-angles-right me-2"></i>
+                        Ver detalhes
+                      </a>
+                    </td>
+                  </tr>
+                  <tr class="padding">
+                    <td>3</td>
+                    <td>Post 3</td>
+                    <td>Categoria 3</td>
+                    <td>XX/XX/XXXX</td>
+                    <td>
+                      <a href="./details.html" class="btn btn-secondary">
+                        <i class="fa-solid fa-angles-right me-2"></i>
+                        Ver detalhes
+                      </a>
+                    </td>
+                  </tr>
+                  <tr class="padding">
+                    <td>4</td>
+                    <td>Post 4</td>
+                    <td>Categoria 4</td>
+                    <td>XX/XX/XXXX</td>
+                    <td>
+                      <a href="./details.html" class="btn btn-secondary">
+                        <i class="fa-solid fa-angles-right me-2"></i>
+                        Ver detalhes
+                      </a>
+                    </td>
+                  </tr>
+                  <tr class="padding">
+                    <td>5</td>
+                    <td>Post 5</td>
+                    <td>Categoria 1</td>
+                    <td>XX/XX/XXXX</td>
+                    <td>
+                      <a href="./details.html" class="btn btn-secondary">
+                        <i class="fa-solid fa-angles-right me-2"></i>
+                        Ver detalhes
+                      </a>
+                    </td>
+                  </tr>
+                  <tr class="padding">
+                    <td>6</td>
+                    <td>Post 6</td>
+                    <td>Categoria 2</td>
+                    <td>XX/XX/XXXX</td>
+                    <td>
+                      <a href="./details.html" class="btn btn-secondary">
+                        <i class="fa-solid fa-angles-right me-2"></i>
+                        Ver detalhes
+                      </a>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <div class="card-footer p-3">
+                <nav>
+                  <ul class="pagination d-flex justify-content-center mb-0">
+                    <li class="page-item disabled s-li">
+                      <a href="#" class="page-link" aria-label="Previous">
+                        <span>&laquo;</span>
+                      </a>
+                    </li>
+                    <li class="page-item active s-li"><a href="#" class="page-link">1</a></li>
+                    <li class="page-item s-li"><a href="#" class="page-link">2</a></li>
+                    <li class="page-item s-li"><a href="#" class="page-link">3</a></li>
+                    <li class="page-item s-li">
+                      <a href="#" class="page-link" aria-label="Next">
+                        <span>&raquo;</span>
+                      </a>
+                    </li>
+                  </ul>
+                </nav>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Footer -->
+    <footer id="footer-container" class="bg-dark text-white mt-5 p-5">
+      <div class="container">
+        <p class="lead text-center">
+          Articles &copy; <span id="year"></span> - Todos os direitos reservados.
+        </p>
+      </div>
+    </footer>
+    <!-- FontAwesome -->
+    <script src="https://kit.fontawesome.com/882bb34580.js" crossorigin="anonymous"></script>
+    <!-- JavaScript -->
+    <script src="../assets/scripts/jquery-3.6.3.min.js"></script>
+    <script src="../assets/scripts/popper.js"></script>
+    <script src="../assets/scripts/bootstrap.js"></script>
+    <script src="../assets/scripts/script.js"></script>
+  </body>
+</html>
