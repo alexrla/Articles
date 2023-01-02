@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Articles - Post 1</title>
+    <title>Articles - Perfil</title>
     <!-- Bootstrap -->
     <link rel="stylesheet" href="../assets/styles/bootstrap.css">
     <!-- CSS -->
@@ -68,7 +68,7 @@
         <div class="row">
           <div class="col-md-6">
             <h1 class="mb-0">
-              Post 1
+              <i class="fa-solid fa-user me-1"></i> Editar Perfil
             </h1>
           </div>
         </div>
@@ -87,52 +87,42 @@
           </div>
           <div class="col-lg-3 col-md-4">
             <div class="d-grid">
-              <a href="../index.html" class="btn btn-success">
-                <i class="fa-solid fa-check me-1"></i> Salvar alterações
+              <a href="../index.html" class="btn btn-warning">
+                <i class="fa-solid fa-unlock me-1"></i> Alterar senha
               </a>
             </div>
           </div>
           <div class="col-lg-3 col-md-4">
             <div class="d-grid">
               <a href="../index.html" class="btn btn-danger">
-                <i class="fa-solid fa-trash me-1"></i> Deletar post
+                <i class="fa-solid fa-trash-can me-1"></i> Remover Perfil
               </a>
             </div>
           </div>
         </div>
       </div>
     </section>
-    <!-- Post Edit -->
-    <section id="post-edit">
+    <!-- Profile Edit -->
+    <section id="profile-edit">
       <div class="container">
         <div class="row">
-          <div class="col col-lg-8 mx-lg-auto">
+          <div class="col col-md-9">
             <div class="card">
               <div class="card-header">
-                <h4>Editar Post</h4>
+                <h4>Editar Perfil</h4>
               </div>
               <div class="card-body">
                 <form action="#">
                   <div class="mb-3">
-                    <label for="title_1" class="form-label">Título:</label>
-                    <input type="text" id="title_1" class="form-control" value="Post 1">
+                    <label for="name" class="form-label">Nome:</label>
+                    <input type="text" id="name" class="form-control" value="Theo">
                   </div>
                   <div class="mb-3">
-                    <label for="category" class="form-label">Categoria:</label>
-                    <select id="category" class="form-select">
-                      <option selected value="categoria 1">Categoria 1</option>
-                      <option value="categoria 2">Categoria 2</option>
-                      <option value="categoria 3">Categoria 3</option>
-                      <option value="categoria 4">Categoria 4</option>
-                    </select>
+                    <label for="email" class="form-label">E-mail:</label>
+                    <input type="e-mail" id="email" class="form-control" value="theo@email.com">
                   </div>
                   <div class="mb-3">
-                    <label for="uploadImage" class="form-label">Carregar imagem:</label>
-                    <input type="file" id="uploadImage" class="form-control">
-                    <small class="form-text ms-1">Tamanho Máximo: 3mb</small>
-                  </div>
-                  <div class="mb-3">
-                    <label for="editor" class="form-label">Postagem:</label>
+                    <label for="editor" class="form-label">Bio:</label>
                     <textarea id="editor" class="form-control">
                       Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
                       Exercitationem, beatae ut, ipsum ullam ducimus harum explicabo 
@@ -148,6 +138,18 @@
                   </div>
                 </form>
               </div>
+            </div>
+          </div>
+          <div class="col col-md-3 mt-4 mt-md-0 text-center">
+            <h3>Avatar</h3>
+            <img src="../assets/img/avatar.png" alt="Avatar" class="d-block img-fluid mb-3">
+            <div class="d-grid">
+              <button class="btn btn-outline-primary mb-2">
+                Editar imagem
+              </button>
+              <button class="btn btn-outline-danger">
+                Apagar imagem
+              </button>
             </div>
           </div>
         </div>
