@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Articles - Login</title>
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="../assets/styles/bootstrap.css">
+    <!-- CSS -->
+    <link rel="stylesheet" href="../assets/styles/style.css">
+  </head>
+  <body>
+    <!-- Navbar -->
+    <div class="nav navbar navbar-expand-lg navbar-dark bg-dark p-2 fixed-top">
+      <div class="container">
+        <a href="../index.html" class="navbar-brand fs-3">Articles</a>
+      </div>
+    </div>
+    <!-- Login -->
+    <section id="login">
+      <div class="container">
+        <div class="row">
+          <div class="col-10 col-md-8 col-lg-6 col-xl-4 mx-auto">
+            <div class="card mb-5">
+              <div class="card-header p-3 text-center">
+                <h3>Realizar Login</h3>
+              </div>
+              <div class="card-body">
+                <form action="#">
+                  <div class="mb-3">
+                    <label for="email" class="form-label">E-mail:</label>
+                    <input type="email" id="email" class="form-control">
+                  </div>
+                  <div class="mb-3">
+                    <label for="password" class="form-label">Senha:</label>
+                    <input type="password" id="password" class="form-control">
+                  </div>
+                  <div class="d-grid mb-4">
+                    <input type="submit" value="Entrar" class="btn btn-success">
+                  </div>
+                  <div class="d-grid">
+                    <div class="mb-4" id="or">
+                      <p>OU</p>
+                      <hr>
+                    </div>
+                    <button class="btn btn-primary position-relative mb-3">
+                      <i class="fa-brands fa-square-facebook fs-4 me-1 position-absolute start-0 ps-3"></i>
+                      Facebook
+                    </button>
+                    <button class="btn btn-danger position-relative">
+                      <i class="fa-brands fa-google fs-4 me-1 position-absolute start-0 ps-3"></i>
+                      Gmail
+                    </button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Footer -->
+    <footer id="footer-container" class="bg-dark text-white mt-5 p-4 fixed-bottom">
+      <div class="container">
+        <p class="lead text-center">
+          Articles &copy; <span id="year"></span> - Todos os direitos reservados.
+        </p>
+      </div>
+    </footer>
+    <!-- FontAwesome -->
+    <script src="https://kit.fontawesome.com/882bb34580.js" crossorigin="anonymous"></script>
+    <!-- JavaScript -->
+    <script src="../assets/scripts/jquery-3.6.3.min.js"></script>
+    <script src="../assets/scripts/popper.js"></script>
+    <script src="../assets/scripts/bootstrap.js"></script>
+    <script>
+      // Pegando o ano atual
+      $('#year').text(new Date().getFullYear());
+    </script>
+  </body>
+</html>
